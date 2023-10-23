@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+body {
+    background: black;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    gap: 30px;
+}
+.title {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+}
+.input {
+    max-width: 200px;
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+.btn {
+    background: green;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.title__time {
+    color: white;
+}
+.game__block {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(59, 54, 54);
+    box-shadow: 0 0 10px 0 white;
+    position: relative;
+}
+
+.ball {
+    border-radius: 50%;
+    position: absolute;
+}
+
+.ballFigure1 {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.ballFigure2 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.ballFigure3 {
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+.ballFigure4 {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
